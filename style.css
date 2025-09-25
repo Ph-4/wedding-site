@@ -154,14 +154,14 @@ a:active {
   color: #000;
 } 
 
-a .btn:link {
+.btn:link {
   color: #FFF;
 }
 
-a .btn:hover {
+.btn:hover {
   color: #6C774E;
 }
 
-a .btn:visited {
+.btn:visited {
   color: #DCB036;
 }
