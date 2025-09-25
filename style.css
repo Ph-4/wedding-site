@@ -153,3 +153,15 @@ a:hover {
 a:active {
   color: #000;
 } 
+
+a .btn:link {
+  color: #FFF;
+}
+
+a .btn:hover {
+  color: #6C774E;
+}
+
+a .btn:visited {
+  color: #DCB036;
+}
