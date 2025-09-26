@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erina & Fabio — Our Wedding</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Erina and Fabio invite you to their wedding" />
+  <meta name="description" content="Come celebrate this special day with us" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fabioederina.al/" />
+  <meta property="og:title" content="Erina and Fabio invite you to their wedding" />
+  <meta property="og:description" content="Come celebrate this special day with us" />
+  <meta property="og:image" content="https://fabioederina.al/images/og-image.jpg" />
+
+  <!-- X (Twitter) -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://fabioederina.al/" />
+  <meta property="twitter:title" content="Erina and Fabio invite you to their wedding" />
+  <meta property="twitter:description" content="Come celebrate this special day with us" />
+  <meta property="twitter:image" content="https://fabioederina.al/images/og-image.jpg" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero" style="background-image:url('images/hero.jpg')">
+    <div class="overlay">
+      <h1 class="names">
+        Erina & Fabio
+      </h1>
+      <p class="subtitle">
+        We’re getting married!
+      </p>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="story sage">
+    <div class="content">
+      <div data-aos="fade-right">
+        <h2 class="script">Our Story</h2>
+        <p>We met in July 2024 while organizing the trip for the special campaign in Kosovo, and after many conversations here we are.</p>
+      </div>
+    </div>
+    <div data-aos="fade-left">
+      <img src="images/story.jpg" alt="The two of us" class="side-image">
+    </div>
+  </section>
+
+  <!-- Our Wedding -->
+  <section class="details cream">
+    <div data-aos="fade-down">
+      <h2 class="script">
+        Our Wedding
+      </h2>
+    </div>
+    <div class="grid">
+      <div data-aos="fade-up">
+        <div>
+          <h3>when</h3>
+          <p>November 18, 2025<br>10:00 AM</p>
+        </div>
+      </div>
+      <div data-aos="fade-up">
+        <div>
+          <h3>where</h3>
+          <a href="https://maps.app.goo.gl/9tYmdBSRmzRiEqgAA">
+            <p>
+              Kingdom Hall of Jehovah’s Witnesses<br>via Sesia 16, Cantù, 22063
+            </p>
+          </a>
+        </div>
+      </div>
+      <div data-aos="fade-up">
+        <div>
+          <h3>dress code</h3>
+          <p>Formal attire,<br>preferably with green accents</p>
+          <a href="palette.pdf" target="_blank"><p>color palette</p></a>
+        </div>
+      </div>
+    </div>
+    <div data-aos="flip-up">
+      <p class="note">We hope you can celebrate this day with us!</p>
+    </div>
+  </section>
+
+  <!-- Reception -->
+  <section class="reception cream">
+    <div data-aos="fade-down">
+      <h2 class="script">
+        The Reception
+      </h2>
+    </div>
+    <div data-aos="fade-up">
+      <p>
+        If you have received the link to this site directly from Erina or Fabio, you are invited to the buffet, which will be held at:
+      </p>
+      <a href="https://maps.app.goo.gl/weAGxRXLQ6MqvAT89">
+        <p class="place">
+          La Piazza dei Sapori<br>
+          via Milano, 125/a, 22063 Cantù, CO<br>
+          from 12:00 PM to 4:00 PM
+        </p>
+      </a>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="help sage">
+    <div data-aos="fade-right">
+      <div class="content">
+        <a href="https://partiful.com/e/UCfNMjwqT3m6xYvDke9R" class="btn">
+          Confirm your attendance
+        </a>
+      </div>
+    </div>
+    <div data-aos="fade-left">
+      <img src="images/help.jpg" alt="The two of us kissing" class="side-image">
+    </div>
+  </section>
+
+  <footer>
+    <p>Erina & Fabio — November 18, 2025</p>
+    <a href="index.en.html">English</a> |
+    <a href="index.it.html">Italiano</a> |
+    <a href="index.sq.html">Shqip</a> |
+    <a href="#" onclick="resetLang()">🌐 Auto</a>
+  </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  function setLang(lang) {
+    localStorage.setItem("preferredLang", lang);
+    var pages = {
+      "en": "index.en.html",
+      "it": "index.it.html",
+      "sq": "index.sq.html"
+    };
+    window.location.href = pages[lang];
+  }
+
+  function resetLang() {
+    localStorage.removeItem("preferredLang");
+    // Go back to root so auto-detect kicks in again
+    window.location.href = "index.html";
+  }
+</script>
+</body>
+</html>
