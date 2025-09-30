@@ -171,3 +171,8 @@ a:active {
 .btn:visited {
   color: #DCB036;
 }
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
