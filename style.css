@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
-  outline: 1px solid red;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: clip; /* modern CSS, stronger than hidden */
 }
 
 /* Base */
@@ -178,4 +182,16 @@ a:active {
 img, video {
   max-width: 100%;
   height: auto;
+}
+
+[data-aos] {
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.aos-wrapper {
+  overflow-x: hidden;
+  position: relative;
+  overflow: hidden;      /* prevents child transform from leaking out */
+  max-width: 100%;       /* keep container inside viewport */
 }
