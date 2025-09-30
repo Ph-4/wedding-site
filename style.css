@@ -4,6 +4,7 @@ body {
   font-family: 'Inter', sans-serif;
   color: #333;
   background: #fafafa;
+  overflow-x: hidden;
 }
 
 h2.script {
