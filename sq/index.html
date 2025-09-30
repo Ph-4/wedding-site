@@ -33,7 +33,7 @@
 <body>
 
   <!-- Hero -->
-  <section class="hero" style="background-image:url('images/hero.jpg')">
+  <section class="hero" style="background-image:url('../images/hero.jpg')">
     <div class="overlay">
       <h1 class="names">
         Erina & Fabio
@@ -53,7 +53,7 @@
       </div>
     </div>
     <div data-aos="fade-left">
-      <img src="images/story.jpg" alt="Ne të dy" class="side-image">
+      <img src="../images/story.jpg" alt="Ne të dy" class="side-image">
     </div>
   </section>
 
@@ -125,15 +125,15 @@
       </div>
     </div>
     <div data-aos="fade-left">
-      <img src="images/help.jpg" alt="Ne të dy duke u puthur" class="side-image">
+      <img src="../images/help.jpg" alt="Ne të dy duke u puthur" class="side-image">
     </div>
   </section>
 
   <footer>
     <p>Erina & Fabio — 18 nëntor 2025</p>
-    <a href="index.en.html">English</a> |
-    <a href="index.it.html">Italiano</a> |
-    <a href="index.sq.html">Shqip</a> |
+    <a href="/en">English</a> |
+    <a href="/it">Italiano</a> |
+    <a href="/sq">Shqip</a> |
     <a href="#" onclick="resetLang()">🌐 Auto</a>
   </footer>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -144,9 +144,9 @@
   function setLang(lang) {
     localStorage.setItem("preferredLang", lang);
     var pages = {
-      "en": "index.en.html",
-      "it": "index.it.html",
-      "sq": "index.sq.html"
+      "en": "/en",
+      "it": "/it",
+      "sq": "/sq"
     };
     window.location.href = pages[lang];
   }
